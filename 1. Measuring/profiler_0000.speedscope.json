@@ -1,0 +1,112 @@
+{
+  "exporter": "Profiler@4.3.0",
+  "name": "profiler_0000.speedscope.json",
+  "activeProfileIndex": 0,
+  "schema": "https://www.speedscope.app/file-format-schema.json",
+  "shared": {
+    "frames": [
+      {
+        "name": "{|"
+      },
+      {
+        "name": ".\\bad_script.ps1"
+      },
+      {
+        "name": "Start-Sleep -seconds 10"
+      },
+      {
+        "name": "$data = Invoke-RestMethod 'https://restcountries.com/v3.1/all'"
+      },
+      {
+        "name": "$unique_regions = $data | Select-Object -Property Region -Unique"
+      },
+      {
+        "name": "$jsondata = $data | convertto-json"
+      },
+      {
+        "name": "}|"
+      }
+    ]
+  },
+  "profiles": [
+    {
+      "type": "evented",
+      "name": "powershell_ise (6452) Time=11553.2522ms",
+      "unit": "milliseconds",
+      "startValue": 0,
+      "endValue": 11553.2522,
+      "events": [
+        {
+          "at": 0.0,
+          "frame": 0,
+          "type": "O"
+        },
+        {
+          "at": 0.0146,
+          "frame": 0,
+          "type": "C"
+        },
+        {
+          "at": 0.0146,
+          "frame": 1,
+          "type": "O"
+        },
+        {
+          "at": 2.1844,
+          "frame": 2,
+          "type": "O"
+        },
+        {
+          "at": 10003.7758,
+          "frame": 2,
+          "type": "C"
+        },
+        {
+          "at": 10003.7758,
+          "frame": 3,
+          "type": "O"
+        },
+        {
+          "at": 11112.3598,
+          "frame": 3,
+          "type": "C"
+        },
+        {
+          "at": 11112.3598,
+          "frame": 4,
+          "type": "O"
+        },
+        {
+          "at": 11117.3137,
+          "frame": 4,
+          "type": "C"
+        },
+        {
+          "at": 11117.3137,
+          "frame": 5,
+          "type": "O"
+        },
+        {
+          "at": 11553.2075,
+          "frame": 5,
+          "type": "C"
+        },
+        {
+          "at": 11553.2075,
+          "frame": 6,
+          "type": "O"
+        },
+        {
+          "at": 11553.2522,
+          "frame": 6,
+          "type": "C"
+        },
+        {
+          "at": 11553.2522,
+          "frame": 1,
+          "type": "C"
+        }
+      ]
+    }
+  ]
+}
